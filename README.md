@@ -7,8 +7,8 @@ curl --request POST \
   --header 'content-type: application/json' \
   --data '{\n	"username" : "foo",\n	"password" : "foo"\n}'
 
-Step-2 replace <jwt token> below with generated jwt token in above step.<br/>
+Step-2 replace {jwt token} below with generated jwt token in above step.<br/>
   curl --request GET \
   --url http://localhost:8080/hello \
-  --header 'authorization: Bearer <jwt token>' \
+  --header 'authorization: Bearer {jwt token}' \
   --header 'content-type: application/json' \
